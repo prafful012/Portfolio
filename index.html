@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio - Neobrutalist Design Showcase</title>
+  <meta name="description" content="A premium scroll-driven Neobrutalist portfolio demonstrating high-fidelity design layouts, interactive GSAP animations, and playful retro styles.">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome for fallback icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- --- HEADER / NAVBAR --- -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        PRAFFUL
+      </a>
+      <div class="badge nav-badge">HIRE ME PLS</div>
+      <div class="social-links">
+        <a href="https://github.com/prafful012/" class="social-icon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/prafful-kumawat-22567136a/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- HERO SECTION --- -->
+  <section class="hero">
+    <!-- Inline SVG Stickers for Parallax Floating Effect -->
+    <!-- Rainbow Sticker -->
+    <div class="sticker sticker-rainbow" data-speed="1.5">
+      <svg viewBox="0 0 100 80" width="100%" height="100%">
+        <path d="M10,70 A40,40 0 0,1 90,70" fill="none" stroke="#ff9e74" stroke-width="8" stroke-linecap="round"/>
+        <path d="M20,70 A30,30 0 0,1 80,70" fill="none" stroke="#ffde43" stroke-width="8" stroke-linecap="round"/>
+        <path d="M30,70 A20,20 0 0,1 70,70" fill="none" stroke="#76e297" stroke-width="8" stroke-linecap="round"/>
+        <path d="M40,70 A10,10 0 0,1 60,70" fill="none" stroke="#f2a2d4" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="10" cy="70" r="10" fill="#fff" stroke="#000" stroke-width="3"/>
+        <circle cx="90" cy="70" r="10" fill="#fff" stroke="#000" stroke-width="3"/>
+        <path d="M10,70 A40,40 0 0,1 90,70" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" style="stroke-dasharray: 200; stroke-dashoffset: 0;"/>
+      </svg>
+    </div>
+    
+    <!-- Flower Sticker -->
+    <div class="sticker sticker-flower" data-speed="-1.2">
+      <svg viewBox="0 0 100 100" width="100%" height="100%">
+        <!-- Petals -->
+        <circle cx="50" cy="20" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <circle cx="80" cy="50" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <circle cx="50" cy="80" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <circle cx="20" cy="50" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <circle cx="28" cy="28" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <circle cx="72" cy="28" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <circle cx="72" cy="72" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <circle cx="28" cy="72" r="16" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        <!-- Core -->
+        <circle cx="50" cy="50" r="18" fill="#ffde43" stroke="#000" stroke-width="3"/>
+        <circle cx="45" cy="46" r="2.5" fill="#000"/>
+        <circle cx="55" cy="46" r="2.5" fill="#000"/>
+        <path d="M44,56 Q50,60 56,56" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    
+    <!-- Star Sticker -->
+    <div class="sticker sticker-star" data-speed="0.8">
+      <svg viewBox="0 0 100 100" width="100%" height="100%">
+        <path d="M50,5 L62,38 L95,50 L62,62 L50,95 L38,62 L5,50 L38,38 Z" fill="#ff9e74" stroke="#000" stroke-width="3"/>
+        <path d="M50,20 L56,44 L80,50 L56,56 L50,80 L44,56 L20,50 L44,44 Z" fill="#ffde43" stroke="#000" stroke-width="2"/>
+      </svg>
+    </div>
+    
+    <!-- Smiley Wheel Sticker -->
+    <div class="sticker sticker-wheel" data-speed="-1.8">
+      <svg viewBox="0 0 120 120" width="100%" height="100%">
+        <!-- Rays -->
+        <g stroke="#000" stroke-width="3" fill="none">
+          <line x1="60" y1="10" x2="60" y2="110" />
+          <line x1="10" y1="60" x2="110" y2="60" />
+          <line x1="25" y1="25" x2="95" y2="95" />
+          <line x1="25" y1="95" x2="95" y2="25" />
+        </g>
+        <circle cx="60" cy="60" r="40" fill="#76e297" stroke="#000" stroke-width="3"/>
+        <!-- Face details -->
+        <circle cx="48" cy="50" r="4" fill="#000"/>
+        <circle cx="72" cy="50" r="4" fill="#000"/>
+        <path d="M46,68 Q60,78 74,68" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <!-- Candy Sticker -->
+    <div class="sticker sticker-candy" data-speed="1.2">
+      <svg viewBox="0 0 100 60" width="100%" height="100%">
+        <!-- Left Wrapper -->
+        <polygon points="10,10 40,30 10,50" fill="#f2a2d4" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+        <!-- Right Wrapper -->
+        <polygon points="90,10 60,30 90,50" fill="#f2a2d4" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+        <!-- Candy Body -->
+        <rect x="30" y="15" width="40" height="30" rx="10" fill="#ff9e74" stroke="#000" stroke-width="3"/>
+        <path d="M38,20 Q48,15 58,20" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge-wrap">
+        <div class="badge hero-badge-green">CREATIVE MIND</div>
+        <div class="badge hero-badge-orange">ESTD. 2026</div>
+      </div>
+      
+      <div class="hero-title-container">
+        <div class="hero-title-row">
+          <span class="letter-block" style="background: var(--bright-yellow);">P</span>
+          <span class="letter-block" style="background: var(--mint-green);">O</span>
+          <span class="letter-block" style="background: var(--lavender);">R</span>
+          <span class="letter-block" style="background: var(--soft-pink);">T</span>
+        </div>
+        <div class="hero-title-row" style="margin-top: 0.5rem;">
+          <span class="letter-block" style="background: var(--sky-blue);">F</span>
+          <span class="letter-block" style="background: var(--white);">O</span>
+          <span class="letter-block" style="background: var(--bright-orange);">L</span>
+          <span class="letter-block" style="background: var(--mint-green);">I</span>
+          <span class="letter-block" style="background: var(--lavender);">O</span>
+        </div>
+      </div>
+      
+      <p style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 700; max-width: 600px; margin: 2rem auto; text-transform: uppercase; letter-spacing: 0.5px;">
+        Interactive UI/UX & Web Developer turning bold wireframes into playful pixel-perfect interfaces.
+      </p>
+      
+      <a href="#about" class="btn-brutal">ABOUT ME <i class="fas fa-arrow-down" style="margin-left: 0.8rem;"></i></a>
+    </div>
+  </section>
+
+  <!-- --- ABOUT SECTION (SKY BLUE BACKGROUND) --- -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-card brut-border">
+          <span class="section-label">WHO IS THIS?</span>
+          <h2>HI, I'M PRAFFUL! UI/UX DESIGNER & AI AUTOMATION SPECIALIST</h2>
+          <p>
+            I specialize in crafting neobrutalist web experiences that challenge the standards of visual design. 
+            Blending premium layout architecture with micro-interactions, I provide products with a bold and distinct digital voice.
+          </p>
+          
+          <ul class="about-info-list">
+            <li>
+              <span>BASED IN</span>
+              MANDSAUR, INDIA
+            </li>
+            <li>
+              <span>BORN IN</span>
+              OCTOBER 2005
+            </li>
+            <li>
+              <span>CONTACT</span>
+              praffulkumawat68@gmail.com
+            </li>
+            
+          </ul>
+        </div>
+        
+        <div class="about-avatar-wrapper">
+          <div class="badge avatar-badge">UI/UX DESIGNER</div>
+          <div class="about-avatar-frame">
+            <!-- Dynamic generated image will be loaded here -->
+            <img id="avatar-img" src="assets/ChatGPT Image May 31, 2026, 02_14_19 PM.png" alt="Alexa Portrait">
+          </div>
+        </div>
+
+        <!-- Custom Styled QR Cards -->
+        <div class="about-qr-row">
+          <a href="https://github.com/prafful012/">
+          <div class="qr-card brut-border">
+            <div class="qr-box">
+              <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <!-- Styled Neobrutalist QR Grid -->
+                <rect x="10" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+                <rect x="18" y="18" width="14" height="14" fill="#fff"/>
+                <rect x="60" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+                <rect x="68" y="18" width="14" height="14" fill="#fff"/>
+                <rect x="10" y="60" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+                <rect x="18" y="68" width="14" height="14" fill="#fff"/>
+                <rect x="55" y="55" width="10" height="10" fill="#fff"/>
+                <rect x="75" y="55" width="12" height="8" fill="#fff"/>
+                <rect x="55" y="75" width="8" height="12" fill="#fff"/>
+                <rect x="75" y="75" width="15" height="15" fill="#fff"/>
+              </svg>
+            </div>
+            <div class="qr-meta">
+              <span class="qr-title">GITHUB</span>
+              <span class="qr-sub">Check my source code</span>
+            </div>
+          </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/prafful-kumawat-22567136a/">
+          <div class="qr-card brut-border">
+            <div class="qr-box">
+              <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <!-- Alternate QR code design -->
+                <rect x="10" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+                <rect x="18" y="18" width="14" height="14" fill="#fff"/>
+                <rect x="60" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+                <rect x="68" y="18" width="14" height="14" fill="#fff"/>
+                <rect x="10" y="60" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+                <rect x="18" y="68" width="14" height="14" fill="#fff"/>
+                <rect x="55" y="60" width="15" height="10" fill="#fff"/>
+                <rect x="75" y="55" width="8" height="15" fill="#fff"/>
+                <rect x="60" y="75" width="15" height="10" fill="#fff"/>
+                <rect x="80" y="75" width="10" height="10" fill="#fff"/>
+              </svg>
+            </div>
+            <div class="qr-meta">
+              <span class="qr-title">LINKEDIN</span>
+              <span class="qr-sub">Connect with me</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- EDUCATION / EXPERIENCE SECTION 1 --- -->
+  <section class="experience-section">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">MY TIMELINE</span>
+        <h2 class="section-title">ACADEMIC & PROFESSIONAL HISTORY</h2>
+      </div>
+      
+      <div class="timeline-grid">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-date">SEPTEMBER 2025 - MARCH 2026</span>
+            <span class="badge" style="background: var(--lavender);">ROLE</span>
+          </div>
+          <h3 class="timeline-role">WEB DEVELOPER INTERN</h3>
+          <h4 class="timeline-company">LNG SOLUTION, INDORE</h4>
+          <p class="timeline-desc">Developed responsive web applications using HTML, CSS, JavaScript, PHP, and MySQL. Collaborated with the development team to design user-friendly interfaces, troubleshoot and resolve bugs, and optimize website performance. Worked on workflow automation using n8n, creating automated processes, integrating third-party APIs, and improving operational efficiency. Conducted research on automation solutions, tested workflows, and contributed to process optimization and digital transformation initiatives. </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SKILLS SECTION 1 (MINT GREEN BACKGROUND) --- -->
+  <section class="skills-section">
+    <div class="container">
+      <div class="skills-grid">
+        <div class="skills-left">
+          <span class="section-label">EXPERTISE</span>
+          <h2 class="section-title">WHAT I EXCEL IN EVERY SINGLE DAY</h2>
+          <p>Converting creative ideas into bold modular systems with high technical standards.</p>
+          
+          <!-- Curved Dotted Arrow pointing to the right -->
+          <div class="arrow-svg-container">
+            <svg width="100%" height="100%" viewBox="0 0 300 120" preserveAspectRatio="none">
+              <path class="arrow-path" d="M20,20 Q120,10 160,60 T260,80" />
+              <!-- Arrow head -->
+              <path class="arrow-head" d="M260,80 L250,70 L254,82 L245,86 Z" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="skills-cards-wrapper">
+          <div class="skill-box-card">
+            <span class="skill-box-num">01</span>
+            <h3 class="skill-box-title">WEB DESIGN</h3>
+            <p class="skill-box-desc">Bold layouts, neobrutalist borders, dynamic typography grids, and structured component visual rules.</p>
+          </div>
+
+          <div class="skill-box-card" style="background: var(--bright-yellow);">
+            <span class="skill-box-num">02</span>
+            <h3 class="skill-box-title">GSAP WORK</h3>
+            <p class="skill-box-desc">Sophisticated scroll-driven elements, custom marquees, parallax assets, and staggered load reveals.</p>
+          </div>
+
+          <div class="skill-box-card" style="background: var(--soft-pink);">
+            <span class="skill-box-num">03</span>
+            <h3 class="skill-box-title">UI/UX</h3>
+            <p class="skill-box-desc">Building high-fidelity clean logic interfaces, responsive component hierarchies, and interactive systems.</p>
+          </div>
+
+          <div class="skill-box-card" style="background: var(--sky-blue);">
+            <span class="skill-box-num">04</span>
+            <h3 class="skill-box-title">BRANDING</h3>
+            <p class="skill-box-desc">Formulating powerful brand guides, vector sticker guidelines, custom palettes, and visual identities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- HORIZONTAL CARD SLIDER 1 --- -->
+  <section class="carousel-section">
+    <div class="container">
+      <div class="section-intro" style="margin-bottom: 2rem;">
+        <span class="section-label">WIREFRAMES</span>
+        <h2 class="section-title">INTERACTIVE WORK IN PROGRESS</h2>
+      </div>
+    </div>
+    
+    <div class="carousel-wrapper">
+      <div class="carousel-container" id="carousel-track-1">
+        <!-- Wireframe Cards -->
+        <div class="wireframe-card brut-border">
+          <div class="wireframe-view">
+            <img src="assets/Laundry Home Screen.png" alt="LAUNDRY SERVICE APP">
+          </div>
+          <div class="wireframe-meta">
+            <span class="wireframe-tag">LAUNDRY SERVICE APP</span>
+            <h3 class="wireframe-title">SAAS USER INTERFACE</h3>
+            <a class="wireframe-link">VIEW DESIGN FLOW</a>
+          </div>
+        </div>
+
+        <div class="wireframe-card brut-border">
+          <div class="wireframe-view">
+            <img src="assets/Expence Advisor.png" alt="E-Commerce Mockup">
+          </div>
+          <div class="wireframe-meta">
+            <span class="wireframe-tag">AI EXPENCE ADVISOR</span>
+            <h3 class="wireframe-title">AI-POWERED FINANCIAL ASSISTANT</h3>
+            <a class="wireframe-link">VIEW DESIGN FLOW</a>
+          </div>
+        </div>
+
+        <div class="wireframe-card brut-border">
+          <div class="wireframe-view">
+            <img src="assets/MeriSehat.png" alt="Mobile App UI">
+          </div>
+          <div class="wireframe-meta">
+            <span class="wireframe-tag">HEALTHCARE APP</span>
+            <h3 class="wireframe-title">HEALTHCARE PORTAL</h3>
+            <a class="wireframe-link">VIEW DESIGN FLOW</a>
+          </div>
+        </div>
+
+        <div class="wireframe-card brut-border">
+          <div class="wireframe-view">
+            <img src="assets/MeriSehat Desktop.png" alt="Fitness App UI">
+          </div>
+          <div class="wireframe-meta">
+            <span class="wireframe-tag">HEALTHCARE WEB</span>
+            <h3 class="wireframe-title">HEALTHCARE PORTAL</h3>
+            <a class="wireframe-link">VIEW DESIGN FLOW</a>
+          </div>
+        </div>
+
+        <div class="wireframe-card brut-border">
+          <div class="wireframe-view">
+            <img src="assets/GarlicMart.png" alt="SaaS UI Mockup">
+          </div>
+          <div class="wireframe-meta">
+            <span class="wireframe-tag">ECOMMERCE</span>
+            <h3 class="wireframe-title">ORGANIC GROCERY STORE</h3>
+            <a class="wireframe-link">VIEW DESIGN FLOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- PORTFOLIO GALLERY GRID --- -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">SELECTED WORKS</span>
+        <h2 class="section-title">CREATIVE WEBSITES & DIGITAL PRODUCTS</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Card 1 (Browser frame) -->
+        <div class="portfolio-card brut-border">
+          <div class="browser-header">
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+          </div>
+          <div class="browser-content">
+            <img src="assets/Expence Advisor.png" alt="Project Mockup 1">
+          </div>
+          <div class="browser-footer">
+            <span class="project-category">WEB DESIGN</span>
+            <h3 class="project-title">AI-POWERED FINANCIAL ASSISTANT</h3>
+            <a href="#" class="btn-brutal" style="font-size: 0.75rem; padding: 0.5rem 1rem;">GO TO PROJECT</a>
+          </div>
+        </div>
+
+        <!-- Card 2 (Browser frame) -->
+        <div class="portfolio-card brut-border">
+          <div class="browser-header">
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+          </div>
+          <div class="browser-content">
+            <img src="assets/Laundry Home Screen.png" alt="Project Mockup 2">
+          </div>
+          <div class="browser-footer">
+            <span class="project-category">WEB DESIGN</span>
+            <h3 class="project-title">LAUNDRY SERVICE APP</h3>
+            <a href="#" class="btn-brutal" style="font-size: 0.75rem; padding: 0.5rem 1rem;">GO TO PROJECT</a>
+          </div>
+        </div>
+
+        <!-- Card 3 (Browser frame) -->
+        <div class="portfolio-card brut-border">
+          <div class="browser-header">
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+            <span class="browser-dot"></span>
+          </div>
+          <div class="browser-content">
+            <img src="assets/MeriSehat.png" alt="Project Mockup 3">
+          </div>
+          <div class="browser-footer">
+            <span class="project-category">WEB DESIGN</span>
+            <h3 class="project-title">HEALTHCARE WEB</h3>
+            <a href="#" class="btn-brutal" style="font-size: 0.75rem; padding: 0.5rem 1rem;">GO TO PROJECT</a>
+          </div>
+        </div>
+
+        <!-- Card 4 (Mobile frame) -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-speaker"></div>
+          <div class="phone-inner">
+            <img src="assets/MeriSehat.png" alt="Project Phone Mockup 1">
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+
+        <!-- Card 5 (Mobile frame) -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-speaker"></div>
+          <div class="phone-inner">
+            <img src="assets/Laundry Home Screen.png" alt="Project Phone Mockup 2">
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+
+        <!-- Card 6 (Mobile frame) -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-speaker"></div>
+          <div class="phone-inner">
+            <img src="assets/GarlicMart.png" alt="Project Phone Mockup 3">
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- TICKER BAR 1 (YELLOW BACKGROUND) --- -->
+  <div class="ticker-bar">
+    <div class="ticker-track">
+      <!-- Loop Items twice for seamless infinite scroll -->
+      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">BOLD DESIGNS <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      
+      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">BOLD DESIGNS <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+    </div>
+  </div>
+
+  <!-- --- EDUCATION / EXPERIENCE SECTION 2 (DARK BACKGROUND) --- -->
+  <section class="experience-section dark">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">ACCOLADES</span>
+        <h2 class="section-title">HONORS & RECENT DEGREES</h2>
+      </div>
+      
+      <div class="timeline-grid">
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-date">2022 - 2023</span>
+            <span class="badge" style="background: var(--mint-green);">SCHOOL</span>
+          </div>
+          <h3 class="timeline-role">ADITYA PUBLIC SCHOOL</h3>
+          <h4 class="timeline-company">MANDSAUR</h4>
+          <p class="timeline-desc">COMMERCE STREAM</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-date">2023 - 2026</span>
+            <span class="badge" style="background: var(--sky-blue);">DEGREE</span>
+          </div>
+          <h3 class="timeline-role">BATCHERS OF COMPUTER APPLICATION</h3>
+          <h4 class="timeline-company">MANDSAUR UNIVERSITY, MANDSAUR</h4>
+          <p class="timeline-desc">SPECIALIZATION IN SYSTEM ADMINISTRATION AND CYBER SECURITY</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SERVICES SECTION 2 (PASTEL BLUE BACKGROUND) --- -->
+  <section class="skills-section blue">
+    <div class="container">
+      <div class="skills-grid">
+        <div class="skills-left">
+          <span class="section-label">CORE SERVICES</span>
+          <h2 class="section-title" style="color: var(--black);">CREATIVE PATHWAYS & SOLUTIONS</h2>
+          <p style="color: var(--black);">Helping fast-growing tech teams translate detailed briefs into dynamic interactive code.</p>
+          
+          <div class="arrow-svg-container">
+            <svg width="100%" height="100%" viewBox="0 0 300 120" preserveAspectRatio="none">
+              <path class="arrow-path" d="M20,20 Q120,10 160,60 T260,80" />
+              <path class="arrow-head" d="M260,80 L250,70 L254,82 L245,86 Z" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="skills-cards-wrapper">
+          <div class="skill-box-card">
+            <span class="skill-box-num">01</span>
+            <h3 class="skill-box-title">SYSTEM ARCHITECTURE</h3>
+            <p class="skill-box-desc">Creating scalable styles, global design variables, layout structures, and clean modular component blocks.</p>
+          </div>
+
+          <div class="skill-box-card" style="background: var(--bright-yellow);">
+            <span class="skill-box-num">02</span>
+            <h3 class="skill-box-title">CREATIVE COPYWRITING</h3>
+            <p class="skill-box-desc">Composing bold website copy, strong neobrutalist narratives, product copy, and active user interface statements.</p>
+          </div>
+
+          <div class="skill-box-card" style="background: var(--lavender);">
+            <span class="skill-box-num">03</span>
+            <h3 class="skill-box-title">INTERFACE TESTING</h3>
+            <p class="skill-box-desc">Testing browser alignment across resolutions, debugging GSAP scroll speed, and checking interactive triggers.</p>
+          </div>
+
+          <div class="skill-box-card" style="background: var(--soft-pink);">
+            <span class="skill-box-num">04</span>
+            <h3 class="skill-box-title">VECTOR DESIGN</h3>
+            <p class="skill-box-desc">Structuring scalable inline SVGs, sticker elements, colorful gradients, and custom responsive illustrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- TICKER BAR 2 (GREEN BACKGROUND) --- -->
+  <div class="ticker-bar green">
+    <div class="ticker-track">
+      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      
+      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+    </div>
+  </div>
+
+  <!-- --- MOBILE PORTFOLIO GALLERY (PURPLE BACKGROUND) --- -->
+  <section class="gallery-section purple">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label" style="background: var(--bright-yellow); color: var(--black);">MOBILE HUB</span>
+        <h2 class="section-title" style="color: var(--black);">VIBRANT SMARTPHONE INTERFACES</h2>
+      </div>
+
+      <div class="gallery-grid" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="phone-mockup-wrapper">
+          <div class="phone-speaker"></div>
+          <div class="phone-inner">
+            <img src="assets/Laundry Home Screen.png" alt="Mobile UI A">
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+
+        <div class="phone-mockup-wrapper">
+          <div class="phone-speaker"></div>
+          <div class="phone-inner">
+            <img src="assets/MeriSehat.png" alt="Mobile UI B">
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- PERSPECTIVE DESKTOP SHOWCASE (WHITE BACKGROUND) --- -->
+  <section class="desktop-showcase">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">DESKTOP SYSTEM</span>
+        <h2 class="section-title">FULL-SCALE DESKTOP EXPERIENCE</h2>
+      </div>
+      
+      <div class="desktop-row">
+        <div class="desktop-frame-container">
+          <div class="desktop-device-brutal">
+            <div class="desktop-bar">
+              <span class="desktop-dot"></span>
+              <span class="desktop-dot"></span>
+              <span class="desktop-dot"></span>
+            </div>
+            <div class="desktop-screen">
+              <img src="assets/Expence Advisor.png" alt="Full Desktop Mockup">
+            </div>
+          </div>
+        </div>
+
+        <div class="desktop-frame-container">
+          <div class="desktop-device-brutal" style="transform: rotateY(18deg) rotateX(8deg) rotateZ(-1deg); box-shadow: -12px 12px 0px var(--black);">
+            <div class="desktop-bar">
+              <span class="desktop-dot"></span>
+              <span class="desktop-dot"></span>
+              <span class="desktop-dot"></span>
+            </div>
+            <div class="desktop-screen">
+              <img src="assets/GarlicMart.png" alt="Full Desktop Secondary Mockup">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- TICKER BAR 3 (BLUE BACKGROUND) --- -->
+  <div class="ticker-bar blue">
+    <div class="ticker-track">
+      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      
+      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
+    </div>
+  </div>
+
+  <!-- --- FOOTER --- -->
+  <footer>
+    <!-- Footer stickers -->
+    <div class="footer-stickers">
+      <!-- Left Rainbow -->
+      <div class="footer-rainbow-l">
+        <svg viewBox="0 0 100 80" width="100%" height="100%">
+          <path d="M10,70 A40,40 0 0,1 90,70" fill="none" stroke="#a48cf1" stroke-width="8" stroke-linecap="round"/>
+          <path d="M20,70 A30,30 0 0,1 80,70" fill="none" stroke="#ffde43" stroke-width="8" stroke-linecap="round"/>
+          <path d="M30,70 A20,20 0 0,1 70,70" fill="none" stroke="#76e297" stroke-width="8" stroke-linecap="round"/>
+          <path d="M40,70 A10,10 0 0,1 60,70" fill="none" stroke="#f2a2d4" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="10" cy="70" r="10" fill="#fff" stroke="#000" stroke-width="3"/>
+          <circle cx="90" cy="70" r="10" fill="#fff" stroke="#000" stroke-width="3"/>
+          <path d="M10,70 A40,40 0 0,1 90,70" fill="none" stroke="#000" stroke-width="3"/>
+        </svg>
+      </div>
+      <!-- Right Rainbow -->
+      <div class="footer-rainbow-r">
+        <svg viewBox="0 0 100 80" width="100%" height="100%">
+          <path d="M10,70 A40,40 0 0,1 90,70" fill="none" stroke="#a48cf1" stroke-width="8" stroke-linecap="round"/>
+          <path d="M20,70 A30,30 0 0,1 80,70" fill="none" stroke="#ffde43" stroke-width="8" stroke-linecap="round"/>
+          <path d="M30,70 A20,20 0 0,1 70,70" fill="none" stroke="#76e297" stroke-width="8" stroke-linecap="round"/>
+          <path d="M40,70 A10,10 0 0,1 60,70" fill="none" stroke="#f2a2d4" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="10" cy="70" r="10" fill="#fff" stroke="#000" stroke-width="3"/>
+          <circle cx="90" cy="70" r="10" fill="#fff" stroke="#000" stroke-width="3"/>
+          <path d="M10,70 A40,40 0 0,1 90,70" fill="none" stroke="#000" stroke-width="3"/>
+        </svg>
+      </div>
+      <!-- Flower Sticker Left -->
+      <div class="footer-flower-l">
+        <svg viewBox="0 0 100 100" width="100%" height="100%">
+          <circle cx="50" cy="20" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="80" cy="50" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="50" cy="80" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="20" cy="50" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="28" cy="28" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="72" cy="28" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="72" cy="72" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="28" cy="72" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="50" cy="50" r="18" fill="#f2a2d4" stroke="#000" stroke-width="3"/>
+        </svg>
+      </div>
+      <!-- Flower Sticker Right -->
+      <div class="footer-flower-r">
+        <svg viewBox="0 0 100 100" width="100%" height="100%">
+          <circle cx="50" cy="20" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="80" cy="50" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="50" cy="80" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="20" cy="50" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="28" cy="28" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="72" cy="28" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="72" cy="72" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="28" cy="72" r="16" fill="#ffde43" stroke="#000" stroke-width="3"/>
+          <circle cx="50" cy="50" r="18" fill="#a48cf1" stroke="#000" stroke-width="3"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <div class="thank-you-title">
+        <span class="letter-block">T</span>
+        <span class="letter-block">H</span>
+        <span class="letter-block">A</span>
+        <span class="letter-block">N</span>
+        <span class="letter-block">K</span>
+        <span class="letter-block">Y</span>
+        <span class="letter-block">O</span>
+        <span class="letter-block">U</span>
+      </div>
+
+      <!-- Footer Double QR Card blocks -->
+      <div class="footer-qr-container">
+        <div class="qr-card brut-border">
+          <div class="qr-box">
+            <svg viewBox="0 0 100 100" width="100%" height="100%">
+              <rect x="10" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+              <rect x="18" y="18" width="14" height="14" fill="#fff"/>
+              <rect x="60" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+              <rect x="68" y="18" width="14" height="14" fill="#fff"/>
+              <rect x="10" y="60" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+              <rect x="18" y="68" width="14" height="14" fill="#fff"/>
+              <rect x="55" y="55" width="12" height="12" fill="#fff"/>
+              <rect x="75" y="70" width="15" height="15" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="qr-meta">
+            <span class="qr-title">EMAIL ME</span>
+          </div>
+        </div>
+
+        <div class="qr-card brut-border">
+          <div class="qr-box">
+            <svg viewBox="0 0 100 100" width="100%" height="100%">
+              <rect x="10" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+              <rect x="18" y="18" width="14" height="14" fill="#fff"/>
+              <rect x="60" y="10" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+              <rect x="68" y="18" width="14" height="14" fill="#fff"/>
+              <rect x="10" y="60" width="30" height="30" fill="none" stroke="#fff" stroke-width="4"/>
+              <rect x="18" y="68" width="14" height="14" fill="#fff"/>
+              <rect x="55" y="65" width="20" height="8" fill="#fff"/>
+              <rect x="65" y="75" width="15" height="15" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="qr-meta">
+            <span class="qr-title">LinkedIn</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" class="footer-link">ABOUT</a>
+        <a href="#experience-section" class="footer-link">TIMELINE</a>
+        <a href="#skills-section" class="footer-link">SERVICES</a>
+        <a href="#gallery-section" class="footer-link">WORK</a>
+      </div>
+
+      <p class="footer-copy">© 2026 PRAFFUL</p>
+    </div>
+  </footer>
+
+  <!-- --- GSAP & ScrollTrigger Libraries via CDN --- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Custom JS Application Logic -->
+  <script src="app.js"></script>
+
+</body>
+</html>
