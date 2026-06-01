@@ -828,16 +828,13 @@ header {
   margin-top: 3.5rem;
 }
 
-@media (max-width: 1024px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.gallery-section.purple .gallery-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+  margin: 3.5rem auto 0;
 }
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
+
 
 .portfolio-card {
   background: var(--white);
@@ -930,6 +927,9 @@ header {
   box-shadow: var(--shadow-md);
   position: relative;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .phone-mockup-wrapper:hover {
@@ -1454,8 +1454,13 @@ footer {
   .wireframe-view {
     height: 180px;
   }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
   .gallery-section.purple .gallery-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-top: 2rem;
   }
   .desktop-row {
     gap: 2rem;
