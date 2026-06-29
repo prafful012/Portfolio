@@ -949,6 +949,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .phone-speaker {
@@ -1556,5 +1557,282 @@ footer {
   }
   .sticker-candy {
     display: none; /* Hide clutter on mobile */
+  }
+}
+
+/* --- NEOBRUTALIST PROJECT DETAILS MODAL --- */
+.wireframe-card,
+.portfolio-card,
+.phone-mockup-wrapper,
+.desktop-device-brutal {
+  cursor: pointer;
+}
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.project-modal.active {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+
+.modal-card {
+  position: relative;
+  width: 90%;
+  max-width: 1100px;
+  max-height: 85vh;
+  background: var(--white);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  overflow-y: auto;
+  z-index: 10;
+  transform: scale(0.9) rotate(-1deg);
+  opacity: 0;
+}
+
+/* Custom Scrollbar for Modal Card */
+.modal-card::-webkit-scrollbar {
+  width: 12px;
+}
+.modal-card::-webkit-scrollbar-track {
+  background: var(--light-gray);
+  border-left: 2px solid var(--black);
+}
+.modal-card::-webkit-scrollbar-thumb {
+  background: var(--bright-yellow);
+  border: 2px solid var(--black);
+  border-radius: var(--border-radius-sm);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--soft-pink) !important;
+  box-shadow: 3px 3px 0px var(--black) !important;
+}
+.modal-close:hover {
+  transform: translate(-2px, -2px) rotate(5deg) !important;
+  box-shadow: 5px 5px 0px var(--black) !important;
+}
+.modal-close:active {
+  transform: translate(0, 0) !important;
+  box-shadow: 3px 3px 0px var(--black) !important;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.modal-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.modal-main-image-wrap {
+  width: 100%;
+  height: 380px;
+  background: var(--light-gray);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-main-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  background: var(--light-gray);
+}
+
+.modal-thumbnails {
+  display: flex;
+  gap: 0.8rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Custom Scrollbar for Thumbnails */
+.modal-thumbnails::-webkit-scrollbar {
+  height: 8px;
+}
+.modal-thumbnails::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+.modal-thumbnails::-webkit-scrollbar-thumb {
+  background: var(--sky-blue);
+  border: 1px solid var(--black);
+  border-radius: var(--border-radius-sm);
+}
+
+.modal-thumb {
+  width: 90px;
+  height: 65px;
+  object-fit: cover;
+  border: 2px solid var(--black);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  background: var(--white);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 2px 2px 0px var(--black);
+  flex-shrink: 0;
+}
+
+.modal-thumb:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--black);
+}
+
+.modal-thumb.active {
+  border-color: var(--bright-yellow);
+  background: var(--bright-yellow);
+  box-shadow: 3px 3px 0px var(--black);
+  transform: scale(1.05);
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8rem;
+}
+
+.modal-header-info .section-label {
+  margin-bottom: 0;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: var(--black);
+}
+
+.modal-desc {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.modal-features-section h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  color: var(--black);
+}
+
+.modal-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.modal-features li {
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.modal-features li::before {
+  content: "⚡";
+  font-size: 1.1rem;
+  color: var(--bright-orange);
+}
+
+.modal-actions {
+  margin-top: 1rem;
+}
+
+.modal-actions .btn-brutal {
+  padding: 1rem 2rem;
+}
+
+/* Prevent scroll when modal is active */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Media Queries for Modal responsiveness */
+@media (max-width: 900px) {
+  .modal-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .modal-card {
+    padding: 2.5rem 1.8rem 1.8rem 1.8rem;
+    max-height: 90vh;
+  }
+  
+  .modal-main-image-wrap {
+    height: 280px;
+  }
+  
+  .modal-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-main-image-wrap {
+    height: 220px;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
   }
 }
