@@ -294,76 +294,6 @@
     </div>
   </section>
 
-  <!-- --- HORIZONTAL CARD SLIDER 1 --- -->
-  <section class="carousel-section">
-    <div class="container">
-      <div class="section-intro" style="margin-bottom: 2rem;">
-        <span class="section-label">WIREFRAMES</span>
-        <h2 class="section-title">INTERACTIVE WORK IN PROGRESS</h2>
-      </div>
-    </div>
-    
-    <div class="carousel-wrapper">
-      <div class="carousel-container" id="carousel-track-1">
-        <!-- Wireframe Cards -->
-        <div class="wireframe-card brut-border">
-          <div class="wireframe-view">
-            <img src="assets/Laundry Home Screen.png" alt="LAUNDRY SERVICE APP">
-          </div>
-          <div class="wireframe-meta">
-            <span class="wireframe-tag">LAUNDRY SERVICE APP</span>
-            <h3 class="wireframe-title">SAAS USER INTERFACE</h3>
-            <a class="wireframe-link">VIEW DESIGN FLOW</a>
-          </div>
-        </div>
-
-        <div class="wireframe-card brut-border">
-          <div class="wireframe-view">
-            <img src="assets/Expence Advisor.png" alt="E-Commerce Mockup">
-          </div>
-          <div class="wireframe-meta">
-            <span class="wireframe-tag">AI EXPENCE ADVISOR</span>
-            <h3 class="wireframe-title">AI-POWERED FINANCIAL ASSISTANT</h3>
-            <a class="wireframe-link">VIEW DESIGN FLOW</a>
-          </div>
-        </div>
-
-        <div class="wireframe-card brut-border">
-          <div class="wireframe-view">
-            <img src="assets/MeriSehat.png" alt="Mobile App UI">
-          </div>
-          <div class="wireframe-meta">
-            <span class="wireframe-tag">HEALTHCARE APP</span>
-            <h3 class="wireframe-title">HEALTHCARE PORTAL</h3>
-            <a class="wireframe-link">VIEW DESIGN FLOW</a>
-          </div>
-        </div>
-
-        <div class="wireframe-card brut-border">
-          <div class="wireframe-view">
-            <img src="assets/MeriSehat Desktop.png" alt="Fitness App UI">
-          </div>
-          <div class="wireframe-meta">
-            <span class="wireframe-tag">HEALTHCARE WEB</span>
-            <h3 class="wireframe-title">HEALTHCARE PORTAL</h3>
-            <a class="wireframe-link">VIEW DESIGN FLOW</a>
-          </div>
-        </div>
-
-        <div class="wireframe-card brut-border">
-          <div class="wireframe-view">
-            <img src="assets/GarlicMart.png" alt="SaaS UI Mockup">
-          </div>
-          <div class="wireframe-meta">
-            <span class="wireframe-tag">ECOMMERCE</span>
-            <h3 class="wireframe-title">ORGANIC GROCERY STORE</h3>
-            <a class="wireframe-link">VIEW DESIGN FLOW</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- --- PORTFOLIO GALLERY GRID --- -->
   <section class="gallery-section">
     <div class="container">
@@ -374,7 +304,7 @@
 
       <div class="gallery-grid">
         <!-- Card 1 (Browser frame) -->
-        <div class="portfolio-card brut-border">
+        <div class="portfolio-card brut-border" data-project="expense">
           <div class="browser-header">
             <span class="browser-dot"></span>
             <span class="browser-dot"></span>
@@ -391,31 +321,31 @@
         </div>
 
         <!-- Card 2 (Browser frame) -->
-        <div class="portfolio-card brut-border">
+        <div class="portfolio-card brut-border" data-project="garlicmart">
           <div class="browser-header">
             <span class="browser-dot"></span>
             <span class="browser-dot"></span>
             <span class="browser-dot"></span>
           </div>
           <div class="browser-content">
-            <img src="assets/Laundry Home Screen.png" alt="Project Mockup 2">
+            <img src="assets/GarlicMart.png" alt="Project Mockup 2">
           </div>
           <div class="browser-footer">
             <span class="project-category">WEB DESIGN</span>
-            <h3 class="project-title">LAUNDRY SERVICE APP</h3>
+            <h3 class="project-title">GarlicMart E-Commerce</h3>
             <a href="#" class="btn-brutal" style="font-size: 0.75rem; padding: 0.5rem 1rem;">GO TO PROJECT</a>
           </div>
         </div>
 
         <!-- Card 3 (Browser frame) -->
-        <div class="portfolio-card brut-border">
+        <div class="portfolio-card brut-border" data-project="sehat">
           <div class="browser-header">
             <span class="browser-dot"></span>
             <span class="browser-dot"></span>
             <span class="browser-dot"></span>
           </div>
           <div class="browser-content">
-            <img src="assets/MeriSehat.png" alt="Project Mockup 3">
+            <img src="assets/MeriSehat Desktop.png" alt="Project Mockup 3">
           </div>
           <div class="browser-footer">
             <span class="project-category">WEB DESIGN</span>
@@ -425,31 +355,23 @@
         </div>
 
         <!-- Card 4 (Mobile frame) -->
-        <div class="phone-mockup-wrapper">
+        <div class="phone-mockup-wrapper" data-project="sehat">
           <div class="phone-speaker"></div>
           <div class="phone-inner">
-            <img src="assets/MeriSehat.png" alt="Project Phone Mockup 1">
+            <img src="assets/Patient Dashboard.png" alt="Project Phone Mockup 1">
           </div>
           <div class="phone-home-indicator"></div>
         </div>
 
         <!-- Card 5 (Mobile frame) -->
-        <div class="phone-mockup-wrapper">
+        <div class="phone-mockup-wrapper" data-project="laundry">
           <div class="phone-speaker"></div>
           <div class="phone-inner">
-            <img src="assets/Laundry Home Screen.png" alt="Project Phone Mockup 2">
+            <img src="assets/Laundry Home Screen mobile.png" alt="Project Phone Mockup 2">
           </div>
           <div class="phone-home-indicator"></div>
         </div>
 
-        <!-- Card 6 (Mobile frame) -->
-        <div class="phone-mockup-wrapper">
-          <div class="phone-speaker"></div>
-          <div class="phone-inner">
-            <img src="assets/GarlicMart.png" alt="Project Phone Mockup 3">
-          </div>
-          <div class="phone-home-indicator"></div>
-        </div>
       </div>
     </div>
   </section>
@@ -561,85 +483,6 @@
     </div>
   </div>
 
-  <!-- --- MOBILE PORTFOLIO GALLERY (PURPLE BACKGROUND) --- -->
-  <section class="gallery-section purple">
-    <div class="container">
-      <div class="section-intro">
-        <span class="section-label" style="background: var(--bright-yellow); color: var(--black);">MOBILE HUB</span>
-        <h2 class="section-title" style="color: var(--black);">VIBRANT SMARTPHONE INTERFACES</h2>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="phone-mockup-wrapper">
-          <div class="phone-speaker"></div>
-          <div class="phone-inner">
-            <img src="assets/Laundry Home Screen.png" alt="Mobile UI A">
-          </div>
-          <div class="phone-home-indicator"></div>
-        </div>
-
-        <div class="phone-mockup-wrapper">
-          <div class="phone-speaker"></div>
-          <div class="phone-inner">
-            <img src="assets/MeriSehat.png" alt="Mobile UI B">
-          </div>
-          <div class="phone-home-indicator"></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- --- PERSPECTIVE DESKTOP SHOWCASE (WHITE BACKGROUND) --- -->
-  <section class="desktop-showcase">
-    <div class="container">
-      <div class="section-intro">
-        <span class="section-label">DESKTOP SYSTEM</span>
-        <h2 class="section-title">FULL-SCALE DESKTOP EXPERIENCE</h2>
-      </div>
-      
-      <div class="desktop-row">
-        <div class="desktop-frame-container">
-          <div class="desktop-device-brutal">
-            <div class="desktop-bar">
-              <span class="desktop-dot"></span>
-              <span class="desktop-dot"></span>
-              <span class="desktop-dot"></span>
-            </div>
-            <div class="desktop-screen">
-              <img src="assets/Expence Advisor.png" alt="Full Desktop Mockup">
-            </div>
-          </div>
-        </div>
-
-        <div class="desktop-frame-container">
-          <div class="desktop-device-brutal" style="transform: rotateY(18deg) rotateX(8deg) rotateZ(-1deg); box-shadow: -12px 12px 0px var(--black);">
-            <div class="desktop-bar">
-              <span class="desktop-dot"></span>
-              <span class="desktop-dot"></span>
-              <span class="desktop-dot"></span>
-            </div>
-            <div class="desktop-screen">
-              <img src="assets/GarlicMart.png" alt="Full Desktop Secondary Mockup">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- TICKER BAR 3 (BLUE BACKGROUND) --- -->
-  <div class="ticker-bar blue">
-    <div class="ticker-track">
-      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
-      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
-      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
-      
-      <div class="ticker-item">LET'S WORK TOGETHER <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
-      <div class="ticker-item">HIRE ME NOW <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
-      <div class="ticker-item">GET IN TOUCH <svg class="ticker-smiley" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="#000" stroke="#fff" stroke-width="3"/><circle cx="35" cy="40" r="5" fill="#fff"/><circle cx="65" cy="40" r="5" fill="#fff"/><path d="M30,60 Q50,75 70,60" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></div>
-    </div>
-  </div>
 
   <!-- --- FOOTER --- -->
   <footer>
@@ -760,6 +603,36 @@
       <p class="footer-copy">© 2026 PRAFFUL</p>
     </div>
   </footer>
+
+  <!-- --- NEOBRUTALIST PROJECT DETAILS MODAL --- -->
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-card brut-border" id="modal-card">
+      <button class="modal-close btn-brutal" id="modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="modal-grid">
+        <div class="modal-gallery">
+          <div class="modal-main-image-wrap brut-border">
+            <img src="" alt="" id="modal-main-img">
+          </div>
+          <div class="modal-thumbnails" id="modal-thumbnails"></div>
+        </div>
+        <div class="modal-details">
+          <div class="modal-header-info">
+            <span class="section-label" id="modal-project-category"></span>
+            <h2 class="modal-title" id="modal-title"></h2>
+          </div>
+          <p class="modal-desc" id="modal-desc"></p>
+          <div class="modal-features-section">
+            <h3>KEY FEATURES</h3>
+            <ul class="modal-features" id="modal-features"></ul>
+          </div>
+          <div class="modal-actions">
+            <a href="#" class="btn-brutal" id="modal-project-link" target="_blank">GO TO PROJECT <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- --- GSAP & ScrollTrigger Libraries via CDN --- -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
